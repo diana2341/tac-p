@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#logo-title{
+  font-family: 'Akronim';font-size: 40px;
+  color:rgb(134, 29, 29);
+  margin: 0;
+
+}
