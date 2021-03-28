@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import MenuOptions from '../components/MenuOptions'
 import {Carousel} from 'react-bootstrap'
 import tac1 from '../images/tac4.jpeg';
 import tac2 from '../images/tac5.jpg';
@@ -57,6 +58,7 @@ class Home extends Component{
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
+        <MenuOptions/>
     </div>
         )
     }                

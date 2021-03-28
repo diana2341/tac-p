@@ -17,3 +17,25 @@ code {
   margin: 0;
 
 }
+.options{
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.options{
+  object-fit: 'cover';
+  border-radius: 55;
+  height: 100%;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Candal');
+.type{
+  font-family: 'Candal';
+  font-size: 2.5vw;
+  color: white;
+  -webkit-text-decoration: peru wavy overline;
+  text-decoration: peru wavy overline;
+  -webkit-text-decoration-skip: objects;
+  text-decoration-skip: objects;
+}

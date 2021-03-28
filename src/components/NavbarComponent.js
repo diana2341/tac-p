@@ -8,7 +8,7 @@ import {NavDropdown} from 'react-bootstrap';
 export default class NavbarComponent extends React.Component{
     render(){
         return(
-      <Navbar bg="transparent" expand="lg" sticky="top">
+      <Navbar bg="light" expand="lg" sticky="top">
         <Navbar.Brand href="#home">
       <img
         src={logo}
