@@ -9,7 +9,7 @@ export default class NavbarComponent extends React.Component{
     render(){
         return(
       <Navbar bg="light" expand="lg" sticky="top">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
       <img
         src={logo}
         width="100"
@@ -18,12 +18,12 @@ export default class NavbarComponent extends React.Component{
         alt="logo"
       />
     </Navbar.Brand>
-    <Navbar.Brand id='logo-title'href="#home">Taco Haven</Navbar.Brand>
+    <Navbar.Brand id='logo-title'href="/">Taco Haven</Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#link">About</Nav.Link>
             <NavDropdown title="Menu" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Breakfast</NavDropdown.Item>

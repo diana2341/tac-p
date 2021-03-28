@@ -17,16 +17,29 @@ code {
   margin: 0;
 
 }
-.options{
-  width: 100%;
-  height: 15vw;
-  object-fit: cover;
-}
+
 
 .options{
-  object-fit: 'cover';
   border-radius: 55;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    transform: scale(1);
+
+}
+.card{
+overflow: hidden;}
+.card:hover .options{
+  transform: scale(1.1);
+  transition: 0.8s all ease-out;
+  overflow: hidden;
+
+
 
 }
 @import url('https://fonts.googleapis.com/css?family=Candal');
@@ -38,4 +51,8 @@ code {
   text-decoration: peru wavy overline;
   -webkit-text-decoration-skip: objects;
   text-decoration-skip: objects;
+}
+.menu-title{
+  /* -webkit-text-decoration: rgb(134, 29, 29) double underline;
+  text-decoration: rgb(134, 29, 29) double underline; */
 }

@@ -3,7 +3,6 @@ import MenuOptions from '../components/MenuOptions'
 import {Carousel} from 'react-bootstrap'
 import tac1 from '../images/tac4.jpeg';
 import tac2 from '../images/tac5.jpg';
-import tac3 from '../images/tac3.jpeg';
 import bur1 from '../images/bur1.jpeg';
 
 
@@ -20,7 +19,6 @@ class Home extends Component{
         <Carousel fade interval={3000}>
             <Carousel.Item>
                 <img
-                //  height={664}
                 className="d-block w-100"
                 src={tac1}
                 alt="First slide"
@@ -28,11 +26,10 @@ class Home extends Component{
                 <Carousel.Caption>
                 <h3>First slide label</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
+            </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                //  height={664}
                 className="d-block w-100"
                 src={tac2}
                 alt="Second slide"
@@ -45,8 +42,6 @@ class Home extends Component{
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                 
-                //  height={664}
                 className="d-block w-100"
                 src={bur1}
                 alt="Third slide"
@@ -58,7 +53,7 @@ class Home extends Component{
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
-        <MenuOptions/>
+        <MenuOptions routerProps={this.props.routerProps}/>
     </div>
         )
     }                
