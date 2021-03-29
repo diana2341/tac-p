@@ -16,18 +16,16 @@ export default class About extends React.Component{
                         </Col>
                         <Col md={{ span: 4, offset: 2 }}>
                             <p className='title-food'> Bienvenidos!</p>
-                            <p>                         
-                               At Juarez Mexican Restaurant, we have an original and 
-                               delicious taste to our Tex-Mex food. We offer the best
-                                margaritas in the area. We offer 10 different types of 
-                                margaritas to choose from! We are focused on providing 
-                                excellent services with the highest levels of customer 
-                                satisfaction. We will do everything we can to meet your 
-                                expectations! We are a family owned-business established 
-                                in 1996. With a variety of offerings to choose from, we 
-                                are sure you will be happy dining with us. Take a look around
-                                 our website. If you have any comments or questions, please feel
-                                  free to contact us! We hope to see you soon!  We are also WiFi friendly!
+                            <p className='about-p'>                         
+                               At Taco Haven Mexican Restaurant, we have an original and 
+                               delicious taste to our Tex-Mex food. This is an example restaurant site 
+                               used to show my front-end design skills. This web application was made using Reactjs, rails api and boostrap with CSS! 
+                               To see more of my work you can visit <a href='https://dianaponce.netlify.app/'>my portfolio site here </a>
+                                This site will show example foods available in a mexican restaurant, the rest of the text is lorem ipsum...
+                                Nam aliquet, neque non sagittis euismod, ex arcu convallis velit, sed auctor lacus erat vitae nisi. Aenean leo dui, 
+                                finibus eu rutrum eget, tempor eu nulla. Morbi tempor maximus lorem, vitae efficitur lorem malesuada gravida. Vivamus 
+                                lacinia in nisl ac fringilla. Mauris id tristique ante. Mauris pharetra augue vitae nibh placerat feugiat. Mauris nulla augue,
+                                 aliquam non interdum ac, pharetra at nunc. Vestibulum orci turpis, mattis eu nibh sed, pretium auctor arcu.
                             </p>
                         </Col>
                     </Row>

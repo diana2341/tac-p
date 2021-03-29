@@ -32,13 +32,32 @@ class Home extends Component{
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h3 className='menu-title'>SIEMPRES FRESH</h3>
+                <p className='menu-title'>Tasty food, inside a charming Mexican restaurant.</p>
             </Carousel.Caption>
             </Carousel.Item>
                 )}
         </Carousel>
         <MenuOptions routerProps={this.props.routerProps}/>
+        <br/><br/>
+        <div className='about-p'>
+        <p className='title-food'>Hours & Location</p>
+       <p>1600 example,
+        city, state zip</p> 
+        <p>123-456-7788</p>
+
+        <p>Tuesday - Thursday 3pm-9pm</p>
+
+        <p>Friday 11:30am-10pm</p>
+
+        <p>Saturday 11am-10pm</p>
+
+        <p>Sunday 11am-8pm</p>
+
+
+
+        <p>Closed Mondays</p>
+        </div>
     </div>
         )
     }                

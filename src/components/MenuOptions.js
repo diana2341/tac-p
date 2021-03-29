@@ -20,7 +20,7 @@ export default class MenuOptions extends React.Component{
         return( 
             <div> 
             <br/>   
-            <h1 className='menu-title'>Menu</h1><br/><br/><br/>       
+            <h1 className='menu-title'>Mexican Restaurant Menu</h1><br/><br/><br/>       
             <CardGroup>
                 {options.map(option=>
             <Card className='card' onClick={()=>this.props.routerProps.history.push(`/${option}`)}> 

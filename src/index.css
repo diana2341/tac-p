@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-transform: capitalize;
 
+
 }
 
 code {
@@ -47,6 +48,8 @@ overflow: hidden;}
 @import url('https://fonts.googleapis.com/css?family=Candal');
 .type{
   font-family: 'Candal';
+  /* font-family: 'Aladin'; */
+
   font-size: 2.5vw;
   color: white;
   -webkit-text-decoration: peru wavy overline;
@@ -54,10 +57,7 @@ overflow: hidden;}
   -webkit-text-decoration-skip: objects;
   text-decoration-skip: objects;
 }
-.menu-title{
-  /* -webkit-text-decoration: rgb(134, 29, 29) double underline;
-  text-decoration: rgb(134, 29, 29) double underline; */
-}
+
 @import url('https://fonts.googleapis.com/css?family=Calligraffitti');
 .title-food{
   font-family: 'Calligraffitti';
@@ -117,15 +117,38 @@ overflow: hidden;}
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
+  /* width: 100%; */
+  background-color: #282D33;
   color: white;
+  height: 155px;
   text-align: center;
+  bottom:0;
+ padding: 5%;
 }
 /* .about-img{
   width: 600px;
   height: auto;
 } */
+@import url('https://fonts.googleapis.com/css?family=Actor');
+@import url('https://fonts.googleapis.com/css?family=Aladin');
+.about-p{
+  font-family: 'Actor';
+}
+.menu-title{
+  /* -webkit-text-decoration: rgb(134, 29, 29) double underline;
+  text-decoration: rgb(134, 29, 29) double underline; */
+  font-family: 'Aladin';
+  font-weight: bold;
+
+}
+.contact{
+  width:40%;
+  margin: auto;
+  padding: 10px;
+}
+
+ .footer a{
+    text-decoration: none;
+    color: white;
+
+}

@@ -30,7 +30,7 @@ export default class NavbarComponent extends React.Component{
               <NavDropdown.Item href="lunch">Lunch</NavDropdown.Item>
               <NavDropdown.Item href="/dinner">Dinner</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+              <NavDropdown.Item href="/home/contact-us">Contact</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

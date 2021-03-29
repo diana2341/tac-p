@@ -64,3 +64,14 @@ export default class Menu extends React.Component{
         )
     }
 }
+
+
+// Breakfast Specials
+// A Mexican breakfast is the perfect start to any day and La Tapatia is here to accommodate with a great selection of Mexican breakfast favorites. We offer a large selection of traditional breakfast items as well as our one-of-a-kind Fajitas for Two. Stay tuned for more breakfast specials. To learn more about our breakfast items, stop into our restaurant or contact us by phone or email.
+
+// Lunch Specials
+// Despite all the attention paid to brunch, lunch is truly the unsung hero of midday meals. It provides us sustenance to make it through a boring work day, provides an opportunity to drink before dark, and most importantly, it's much cheaper than dinner. When the lunch hour strikes and you're craving authentic Mexican food, stop by and savor a special meal at a special price!
+
+// Dinner Specials
+// Come in, relax, and enjoy delicious lunch and dinner specials that are prepared by expert chefs and set at affordable prices. Rough day at the office? Treat yourself to our daily dinner specials. After the work day is over, come on by and enjoy some of the best Mexican food Houston has to offer.
+
