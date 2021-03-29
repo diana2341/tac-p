@@ -2,10 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home'
 import NavbarComponent from './components/NavbarComponent'
-import BreakfastMenu from './components/BreakfastMenu'
-import LunchMenu from './components/Lunchmenu'
-import DinnerMenu from './components/DinnerMenu'
-
+import Menu from './components/Menu'
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,9 +17,7 @@ function App() {
       <NavbarComponent/>
       <Router>
        <Route exact path="/" render={(props) => <Home routerProps={props}/>} />
-       <Route exact path="/breakfast" render={() => <BreakfastMenu/>} />
-       <Route exact path="/lunch" render={() => <LunchMenu/>} />
-       <Route exact path="/dinner" render={() => <DinnerMenu/>} />
+       <Route exact path="/:name" render={(props) => <Menu routerProps={props}/>} />
       </Router>
 
     </div>

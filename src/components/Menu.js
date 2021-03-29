@@ -1,7 +1,7 @@
 import React from 'react'
 import skull from '../images/skull.png'
 import {Figure,Jumbotron,Col,Image,Container,Row} from 'react-bootstrap'
-import Side from '../components/SideImages'
+import Side from './SideImages'
 import shrimp from'../taco-imgs/shrimp.jpeg'
 import breakfast1 from'../taco-imgs/breakfast1.jpeg'
 import breakfast2 from'../taco-imgs/breakfast2.jpeg'
@@ -9,7 +9,7 @@ import breakfast3 from'../taco-imgs/breakfast3.jpeg'
 import breakfast4 from'../taco-imgs/breakfast4.jpeg'
 import breakfast5 from'../taco-imgs/breakfast5.jpeg'
 
-export default class BreakfastMenu extends React.Component{
+export default class Menu extends React.Component{
     render(){
         let options=['breakfast1','breakfast2','breakfast3','breakfast4','breakfast5']
         let renderImage=(option)=>{
@@ -33,8 +33,7 @@ export default class BreakfastMenu extends React.Component{
                 />
             </Figure>
             <br/>
-            <div className='title-food'>Breakfast</div><br/>
-
+            <div className='title-food'>{this.props.routerProps.match.url.replace(/[^\w\s]/gi, '')}</div><br/>
             <div className='menu'>
                 <Container>
                 {options.map(option=>
@@ -45,10 +44,16 @@ export default class BreakfastMenu extends React.Component{
                             width={200}
                             height={210} 
                             src={renderImage(option)}
+                            className='option-img'
                             />
                         </Figure>
                         </Col>  
-                    <Col md={{ span: 3, offset: 3 }}>{`md={{ span: 4, offset: 4 }}`}</Col>
+                    <Col md={{ span: 3, offset: 1 }}>
+                        {`example ingredients and taste for the sustomers till back end is done`}
+                    </Col>
+                    <Col md={{ span: 1, offset: 1 }}>
+                        {`$13:00`}
+                    </Col>
                 </Row> 
                 )}
                 
