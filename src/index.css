@@ -56,3 +56,43 @@ overflow: hidden;}
   /* -webkit-text-decoration: rgb(134, 29, 29) double underline;
   text-decoration: rgb(134, 29, 29) double underline; */
 }
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+.title-food{
+  font-family: 'Calligraffitti';
+  font-weight: bold;
+  font-size: 3vw;
+  text-decoration:  overline;
+
+}
+.skull{
+  -webkit-animation: action 1s infinite  alternate;
+  animation: action 1s infinite  alternate;
+
+
+
+}
+@-webkit-keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+@keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+.men{
+  background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+  background-color: #D4AE8A;
+  height: 100vh;
+  width: 100vw;
+}
+.menu{
+  background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+
+  background-color:#C26B36;
+  width: 50%;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  
+
+}

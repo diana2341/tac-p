@@ -2,7 +2,7 @@ import React from 'react'
 export default class DinnerMenu extends React.Component{
     render(){
         return(
-            <div>Din din</div>
+            <div className='title-food'>Din din</div>
         )
     }
 }
