@@ -13,14 +13,22 @@ class Home extends Component{
 
     
     render(){
+        let options=['tac1','tac2','bur1']
+        let renderImage=(option)=>{
+            if (option === 'tac1')return tac1
+            else if (option === 'tac2')return tac2
+            else if(option==='bur1')return bur1
+            else return null
+        }
         return(
     <div>
             
         <Carousel fade interval={3000}>
-            <Carousel.Item>
+            {options.map(option=>
+                  <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src={tac1}
+                src={renderImage(option)}
                 alt="First slide"
                 />
                 <Carousel.Caption>
@@ -28,30 +36,7 @@ class Home extends Component{
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
-                <img
-                className="d-block w-100"
-                src={tac2}
-                alt="Second slide"
-                />
-
-                <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                className="d-block w-100"
-                src={bur1}
-                alt="Third slide"
-                />
-
-                <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
+                )}
         </Carousel>
         <MenuOptions routerProps={this.props.routerProps}/>
     </div>
