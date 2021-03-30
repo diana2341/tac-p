@@ -32,8 +32,8 @@ class Home extends Component{
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3 className='menu-title'>SIEMPRES FRESH</h3>
-                <p className='menu-title'>Tasty food, inside a charming Mexican restaurant.</p>
+                <h3 className='menu-title second'>SIEMPRE FRESH</h3>
+                <p className='menu-title second'>Tasty food, inside a charming Mexican restaurant</p>
             </Carousel.Caption>
             </Carousel.Item>
                 )}

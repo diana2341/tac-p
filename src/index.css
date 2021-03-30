@@ -134,8 +134,20 @@ padding: 5%;
   text-decoration: rgb(134, 29, 29) double underline; */
   font-family: 'Aladin';
   font-weight: bold;
+  /* text-shadow: 2px 2px 4px #993e3e; */
+  text-shadow: 1px 1px 3px #8a3131;
+
 
 }
+.menu-title.second{
+  /* -webkit-text-decoration: rgb(134, 29, 29) double underline;
+  text-decoration: rgb(134, 29, 29) double underline; */
+  /* font-family: 'Aladin';
+  font-weight: bold; */
+  text-shadow: 2px 2px 4px #8a3131;
+
+
+} 
 .contact{
   width:40%;
   margin: auto;
