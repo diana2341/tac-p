@@ -28,7 +28,7 @@ function App() {
           <Route exact path="/home/about-us" render={(props) => <About/>} />
           <Route exact path="/home/contact-us" render={(props) => <Contact/>} />
         </Router>
-      <br/><br/>
+      {/* <br/><br/> */}
       <Footer/>
 
     </div>

@@ -1,28 +1,20 @@
 import React from 'react'
 import skull from '../images/skull.png'
 import {Figure,Jumbotron,Col,Image,Container,Row} from 'react-bootstrap'
-import Side from './SideImages'
-import shrimp from'../taco-imgs/shrimp.jpeg'
-import breakfast1 from'../taco-imgs/breakfast1.jpeg'
-import breakfast2 from'../taco-imgs/breakfast2.jpeg'
-import breakfast3 from'../taco-imgs/breakfast3.jpeg'
-import breakfast4 from'../taco-imgs/breakfast4.jpeg'
-import breakfast5 from'../taco-imgs/breakfast5.jpeg'
+import renderImage from '../components/food'
+
 
 export default class Menu extends React.Component{
     render(){
         let options=['breakfast1','breakfast2','breakfast3','breakfast4','breakfast5']
-        let renderImage=(option)=>{
-            if (option === 'breakfast1')return breakfast1
-            else if (option === 'breakfast2')return breakfast2
-            else if(option==='breakfast3')return breakfast3
-            else if(option==='breakfast4')return breakfast4
-            else if(option==='breakfast5')return breakfast5
+        let lunchOptions=['lunch1','lunch2','lunch3','lunch4','lunch5']
+        let dinnerOptions=['dinner1','dinner2','dinner3','dinner4','dinner5']
+        let type=this.props.routerProps.match.url.replace(/[^\w\s]/gi, '')
+        let foodType= type ==='breakfast'? options : type ==='lunch'? lunchOptions : type === 'dinner'? dinnerOptions:null
 
-            else return null
-        }
         return(
         <div className='men'>
+            {console.log(type)}
             <Figure>
                 <Figure.Image
                 width={200}
@@ -36,14 +28,14 @@ export default class Menu extends React.Component{
             <div className='title-food'>{this.props.routerProps.match.url.replace(/[^\w\s]/gi, '')}</div><br/>
             <div className='menu'>
                 <Container>
-                {options.map(option=>
+                {foodType.map(option=>
                 <Row>
                     <Col md={4}> 
                         <Figure>
                             <Figure.Image
                             width={200}
                             height={210} 
-                            src={renderImage(option)}
+                            src={renderImage(option,type)}
                             className='option-img'
                             />
                         </Figure>

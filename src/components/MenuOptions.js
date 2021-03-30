@@ -1,9 +1,6 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
-import {Button} from 'react-bootstrap';
 import {CardGroup} from 'react-bootstrap';
-
-
 import breakfast from '../images/breakfast.jpeg'
 import lunch from '../images/enchiladas.jpeg'
 import dinner from '../images/din.jpeg'

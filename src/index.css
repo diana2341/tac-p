@@ -117,18 +117,13 @@ overflow: hidden;}
 }
 
 .footer {
-  /* width: 100%; */
-  background-color: #282D33;
-  color: white;
-  height: 155px;
-  text-align: center;
-  bottom:0;
- padding: 5%;
+background-color: #282D33;
+color: white;
+text-align: center;
+padding: 5%;
+ 
 }
-/* .about-img{
-  width: 600px;
-  height: auto;
-} */
+
 @import url('https://fonts.googleapis.com/css?family=Actor');
 @import url('https://fonts.googleapis.com/css?family=Aladin');
 .about-p{
@@ -152,3 +147,4 @@ overflow: hidden;}
     color: white;
 
 }
+

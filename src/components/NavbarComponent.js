@@ -25,12 +25,11 @@ export default class NavbarComponent extends React.Component{
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/home/about-us">About</Nav.Link>
+            <Nav.Link href="/home/about-us">Contact</Nav.Link>
             <NavDropdown title="Menu" id="basic-nav-dropdown">
               <NavDropdown.Item href="/breakfast">Breakfast</NavDropdown.Item>
               <NavDropdown.Item href="lunch">Lunch</NavDropdown.Item>
               <NavDropdown.Item href="/dinner">Dinner</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/home/contact-us">Contact</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

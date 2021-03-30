@@ -57,7 +57,7 @@ class Home extends Component{
 
 
         <p>Closed Mondays</p>
-        </div>
+        </div><br/><br/>
     </div>
         )
     }                
