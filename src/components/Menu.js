@@ -1,7 +1,8 @@
 import React from 'react'
 import skull from '../images/skull.png'
-import {Figure,Jumbotron,Col,Image,Container,Row} from 'react-bootstrap'
-import renderImage from '../components/food'
+import {Figure,Jumbotron,Col,Image,Container,Row,Dropdown} from 'react-bootstrap'
+import * as data from '../components/food'
+
 
 
 export default class Menu extends React.Component{
@@ -29,27 +30,31 @@ export default class Menu extends React.Component{
             <div className='menu'>
                 <Container>
                 {foodType.map(option=>
+                <div>
                 <Row>
                     <Col md={4}> 
                         <Figure>
                             <Figure.Image
                             width={200}
                             height={210} 
-                            src={renderImage(option,type)}
+                            src={data.renderImage(option,type)}
                             className='option-img'
                             />
                         </Figure>
                         </Col>  
-                    <Col md={{ span: 3, offset: 1 }}>
-                        {`example ingredients and taste for the sustomers till back end is done`}
+                    <Col lg md={{ span: 3, offset: 1 }}>
+                        <p className='about-p food-p'>{data.returnDescription(option,type)['description']}</p>
                     </Col>
-                    <Col md={{ span: 1, offset: 1 }}>
-                        {`$13:00`}
+                    <Col sm md={{ span: 1, offset: 1 }}>
+                        <p className='about-p food-p'>{`$${data.returnDescription(option,type)['price']}.00`}</p>
                     </Col>
-                </Row> 
+                    <Dropdown.Divider/>
+                </Row>
+                <Row><hr className='div'/></Row>
+                </div>
                 )}
                 
-            </Container>   
+            </Container>  
             </div>
 
         </div>
