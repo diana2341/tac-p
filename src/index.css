@@ -171,3 +171,18 @@ hr.div{
   font-weight: bold;
 
 }
+@media(max-width : 964px){
+  .menu{
+    width:100%;
+  }
+
+}
+@media(max-width : 768px){
+  .menu{
+    width:100%;
+  }
+  .option-img{
+    width:  80%;
+    height: 200px;
+  }
+}
