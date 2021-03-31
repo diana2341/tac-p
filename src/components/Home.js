@@ -41,7 +41,7 @@ class Home extends Component{
         <MenuOptions routerProps={this.props.routerProps}/>
         <br/><br/>
         <div className='about-p'>
-        <p className='title-food'>Hours & Location</p>
+        <h3 className='title-food'>Hours & Location</h3>
        <p>1600 example,
         city, state zip</p> 
         <p>123-456-7788</p>
