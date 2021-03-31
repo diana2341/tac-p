@@ -180,11 +180,14 @@ hr.div{
 .contact-logo{
   position: relative;
 }
-@media(max-width : 964px){
+@media(max-width : 375px){
   .menu{
-    width:100%;
+    border-radius: 73% 74% 70% 80% / 7% 15% 21% 23% ;
   }
-
+  .option-img{
+    width:  80%;
+    height: 200px;
+  }
 }
 @media(max-width : 768px){
   .menu{
@@ -194,4 +197,10 @@ hr.div{
     width:  80%;
     height: 200px;
   }
+}
+@media(max-width : 964px){
+  .menu{
+    width:100%;
+  }
+
 }
