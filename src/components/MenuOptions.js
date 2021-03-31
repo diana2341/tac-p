@@ -23,7 +23,7 @@ export default class MenuOptions extends React.Component{
             <Card className='card' onClick={()=>this.props.routerProps.history.push(`/${option}`)}> 
                 <Card.Img className='options' variant="top" src={renderImage(option)}/>
                 <Card.ImgOverlay className='body'><br/>
-                    <Card.Text className='type'>{option.toUpperCase()}</Card.Text>
+                    <Card.Text className='type'><h1>{option.toUpperCase()}</h1></Card.Text>
                 </Card.ImgOverlay>
             </Card>
             )}
