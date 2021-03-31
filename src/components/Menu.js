@@ -6,6 +6,13 @@ import * as data from '../components/food'
 
 
 export default class Menu extends React.Component{
+    componentDidMount(){
+        window.scroll({
+            top: 0, 
+            left: 0, 
+            // behavior: 'smooth'
+          });
+    }
     render(){
         let options=['breakfast1','breakfast2','breakfast3','breakfast4','breakfast5']
         let lunchOptions=['lunch1','lunch2','lunch3','lunch4','lunch5']
