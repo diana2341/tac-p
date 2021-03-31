@@ -177,6 +177,9 @@ hr.div{
   width: 100%;
   height: auto;
 }
+.contact-logo{
+  position: relative;
+}
 @media(max-width : 964px){
   .menu{
     width:100%;

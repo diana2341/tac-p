@@ -1,5 +1,6 @@
 import React from 'react'
-import { Jumbotron,Container } from 'react-bootstrap'
+import { Jumbotron,Container ,Figure} from 'react-bootstrap'
+import logo from '../images/chil.png'
 
 export default class ContactUs extends React.Component{
     render(){
@@ -8,6 +9,15 @@ export default class ContactUs extends React.Component{
                 {/* <Jumbotron> */}
                     {/* <Container><br/><br/> */}
                     <div className='jumbo'>
+                    <Figure>
+                <Figure.Image
+                width={210}
+                height={310} 
+                alt="171x180"
+                src={logo}
+                className='skull'
+                />
+                </Figure>
                     <h1 className='title-food'>Contact Us</h1>
                     <p>Interested in joining our team? </p>
                     <p>Click <a href=''>here</a> for more information about open positions</p>
