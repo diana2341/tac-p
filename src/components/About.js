@@ -11,11 +11,11 @@ export default class About extends React.Component{
                 <Container>
                     <Row>
                         <Col  md={6}>
-                            <Image src={interior} rounded className='about-img'fluid/>
+                            <Image src={interior} rounded className='about-img'fluid/><br/><br/>
 
                         </Col>
                         <Col md={{ span: 4, offset: 2 }}>
-                            <p className='title-food'> Bienvenidos!</p>
+                            <h1 className='title-food'> Bienvenidos!</h1>
                             <p className='about-p'>                         
                                At Taco Haven Mexican Restaurant, we have an original and 
                                delicious taste to our Tex-Mex food. This is an example restaurant site 

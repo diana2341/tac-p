@@ -62,7 +62,7 @@ overflow: hidden;}
 .title-food{
   font-family: 'Calligraffitti';
   font-weight: bold;
-  font-size: 3vw;
+  /* font-size: 13%; */
   text-decoration:  overline;
 
 }
@@ -151,7 +151,7 @@ padding: 5%;
 
 } 
 .contact{
-  width:40%;
+  /* width:40%; */
   margin: auto;
   padding: 10px;
 }
@@ -169,6 +169,13 @@ hr.div{
   color: white;
   font-weight: bold;
 
+}
+.jumbo{
+  background-color: #EAECEF;
+  border-radius: 10%;
+  padding: 10%;
+  width: 100%;
+  height: auto;
 }
 @media(max-width : 964px){
   .menu{

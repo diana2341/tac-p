@@ -26,7 +26,7 @@ export default class Menu extends React.Component{
                 />
             </Figure>
             <br/>
-            <div className='title-food'>{this.props.routerProps.match.url.replace(/[^\w\s]/gi, '')}</div><br/>
+            <h1 className='title-food'>{this.props.routerProps.match.url.replace(/[^\w\s]/gi, '')}</h1><br/>
             <div className='menu'>
                 <Container>
                 {foodType.map(option=>
